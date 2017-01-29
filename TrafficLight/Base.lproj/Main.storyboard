@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,33 +22,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-qh-j5E">
-                                <rect key="frame" x="136" y="487" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8jG-aI-GBn" userLabel="Box">
+                                <rect key="frame" x="66" y="20" width="188" height="416"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-qh-j5E">
+                                <rect key="frame" x="136" y="363" width="51" height="31"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="UIL-JN-S4c"/>
+                                    <constraint firstAttribute="height" constant="31" id="V00-m9-AnB"/>
+                                </constraints>
+                                <color key="onTintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="switchedTrafficLight:" destination="BYZ-38-t0r" eventType="valueChanged" id="5sJ-ZR-aDs"/>
                                 </connections>
                             </switch>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Er4-Jy-DgD">
-                                <rect key="frame" x="110" y="42" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Er4-Jy-DgD">
+                                <rect key="frame" x="110" y="60" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iMd-1r-4pi"/>
+                                    <constraint firstAttribute="width" constant="100" id="rvU-cy-lMd"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJO-v7-gjo">
-                                <rect key="frame" x="110" y="150" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QRr-Am-Ut4">
+                                <rect key="frame" x="110" y="200" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="D5H-vH-AYt"/>
+                                    <constraint firstAttribute="width" constant="100" id="Soa-he-WsZ"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRr-Am-Ut4">
-                                <rect key="frame" x="110" y="258" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yaT-iL-3ZR" userLabel="Pole">
+                                <rect key="frame" x="135" y="436" width="50" height="132"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="UDO-Se-TfA"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7uF-qh-j5E" secondAttribute="bottom" constant="174" id="9wF-Ch-2rO"/>
+                            <constraint firstItem="7uF-qh-j5E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zu-hl-9sh"/>
+                            <constraint firstItem="yaT-iL-3ZR" firstAttribute="top" secondItem="8jG-aI-GBn" secondAttribute="bottom" id="DWL-00-U50"/>
+                            <constraint firstItem="8jG-aI-GBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GNB-gt-IkU"/>
+                            <constraint firstItem="yaT-iL-3ZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K0K-K7-PR8"/>
+                            <constraint firstItem="Er4-Jy-DgD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="TBl-xu-lp0"/>
+                            <constraint firstItem="8jG-aI-GBn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="TRK-Jz-NX6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yaT-iL-3ZR" secondAttribute="bottom" id="aNW-zX-dpo"/>
+                            <constraint firstItem="yaT-iL-3ZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9k-UB-7c8"/>
+                            <constraint firstItem="8jG-aI-GBn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fxH-dE-4Vt"/>
+                            <constraint firstItem="yaT-iL-3ZR" firstAttribute="trailing" secondItem="7uF-qh-j5E" secondAttribute="trailing" id="g9x-0Q-3C7"/>
+                            <constraint firstItem="QRr-Am-Ut4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jtt-04-oVa"/>
+                            <constraint firstItem="Er4-Jy-DgD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="muM-eB-cLM"/>
+                            <constraint firstItem="yaT-iL-3ZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oXs-xA-6ek"/>
+                            <constraint firstItem="QRr-Am-Ut4" firstAttribute="top" secondItem="Er4-Jy-DgD" secondAttribute="bottom" constant="40" id="qoJ-ij-KQu"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenBulb" destination="QRr-Am-Ut4" id="461-8K-GvU"/>
                         <outlet property="redBulb" destination="Er4-Jy-DgD" id="NWb-YN-vam"/>
                         <outlet property="trafficLightSwitch" destination="7uF-qh-j5E" id="7ym-2M-lHt"/>
-                        <outlet property="yellowBulb" destination="OJO-v7-gjo" id="JqY-ig-ts6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

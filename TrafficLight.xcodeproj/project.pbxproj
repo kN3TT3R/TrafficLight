@@ -509,6 +509,7 @@
 				2FDE96661E2CA95800B0EC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FDE96671E2CA95800B0EC13 /* Build configuration list for PBXNativeTarget "TrafficLightTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				2FDE96691E2CA95800B0EC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FDE966A1E2CA95800B0EC13 /* Build configuration list for PBXNativeTarget "TrafficLightUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +527,7 @@
 				2FDE966C1E2CA95800B0EC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -2,7 +2,7 @@
 //  TrafficLightUITests.swift
 //  TrafficLightUITests
 //
-//  Created by VDAB Cursist on 16/01/17.
+//  Created by Kenneth Debruyn on 16/01/17.
 //  Copyright © 2017 kN3TT3R. All rights reserved.
 //
 
